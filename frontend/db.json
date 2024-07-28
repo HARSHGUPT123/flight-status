@@ -1,0 +1,104 @@
+{
+  "flights": [
+    {
+      "flight_id": "AA123",
+      "status": "On Time",
+      "gate": "A1",
+      "departure_time": "2024-07-27T14:30:00Z",
+      "arrival_time": "2024-07-27T16:45:00Z"
+    },
+    {
+      "flight_id": "BA456",
+      "status": "Delayed",
+      "gate": "B2",
+      "departure_time": "2024-07-27T15:00:00Z",
+      "arrival_time": "2024-07-27T17:30:00Z"
+    },
+    {
+      "flight_id": "DL789",
+      "status": "Cancelled",
+      "gate": "C3",
+      "departure_time": "2024-07-27T16:00:00Z",
+      "arrival_time": "2024-07-27T18:30:00Z"
+    },
+    {
+      "flight_id": "UA101",
+      "status": "On Time",
+      "gate": "D4",
+      "departure_time": "2024-07-27T17:00:00Z",
+      "arrival_time": "2024-07-27T19:30:00Z"
+    },
+    {
+      "flight_id": "SW202",
+      "status": "Delayed",
+      "gate": "E5",
+      "departure_time": "2024-07-27T18:00:00Z",
+      "arrival_time": "2024-07-27T20:30:00Z"
+    },
+    {
+      "flight_id": "LH303",
+      "status": "On Time",
+      "gate": "F6",
+      "departure_time": "2024-07-27T19:00:00Z",
+      "arrival_time": "2024-07-27T21:30:00Z"
+    },
+    {
+      "flight_id": "EK404",
+      "status": "Delayed",
+      "gate": "G7",
+      "departure_time": "2024-07-27T20:00:00Z",
+      "arrival_time": "2024-07-27T22:30:00Z"
+    },
+    {
+      "flight_id": "AF505",
+      "status": "On Time",
+      "gate": "H8",
+      "departure_time": "2024-07-27T21:00:00Z",
+      "arrival_time": "2024-07-28T00:30:00Z"
+    },
+    {
+      "flight_id": "KQ606",
+      "status": "Cancelled",
+      "gate": "I9",
+      "departure_time": "2024-07-27T22:00:00Z",
+      "arrival_time": "2024-07-28T01:30:00Z"
+    },
+    {
+      "flight_id": "QR707",
+      "status": "On Time",
+      "gate": "J10",
+      "departure_time": "2024-07-27T23:00:00Z",
+      "arrival_time": "2024-07-28T02:30:00Z"
+    }
+  ],
+  "passengers": {
+    "AA123": [
+      {
+        "passenger_id": "P001",
+        "name": "John Doe",
+        "seat": "12A",
+        "phone_number": "+12345678901"
+      },
+      {
+        "passenger_id": "P002",
+        "name": "Jane Smith",
+        "seat": "12B",
+        "phone_number": "+12345678902"
+      }
+    ],
+    "BA456": [
+      {
+        "passenger_id": "P003",
+        "name": "Alice Johnson",
+        "seat": "14C",
+        "phone_number": "+12345678903"
+      },
+      {
+        "passenger_id": "P004",
+        "name": "Bob Brown",
+        "seat": "14D",
+        "phone_number": "+12345678904"
+      }
+    ]
+  }
+}
