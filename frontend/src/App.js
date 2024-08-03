@@ -3,9 +3,9 @@ import { Routes, Route, Link } from 'react-router-dom';
 import FlightDetails from './FlightDetails';
 import './App.css';
 
-
 const App = () => {
   const [flights, setFlights] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:5000/flights')
@@ -14,9 +14,23 @@ const App = () => {
       .catch(error => console.error('Error fetching flights:', error));
   }, []);
 
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const filteredFlights = flights.filter(flight => 
+    flight.flight_id.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
       <h1>Flight Status Dashboard</h1>
+      <input
+        type="text"
+        placeholder="Search by Flight ID"
+        value={searchTerm}
+        onChange={handleSearchChange}
+      />
       <Routes>
         <Route
           path="/"
@@ -33,8 +47,8 @@ const App = () => {
                 </tr>
               </thead>
               <tbody>
-                {flights.length > 0 ? (
-                  flights.map((flight) => (
+                {filteredFlights.length > 0 ? (
+                  filteredFlights.map((flight) => (
                     <tr key={flight.flight_id}>
                       <td>{flight.flight_id}</td>
                       <td>{flight.status}</td>
