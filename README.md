@@ -1,4 +1,4 @@
-# flight-status
+# flight-statu
 # import npm
   npm install
   npm start
